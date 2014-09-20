@@ -4,7 +4,7 @@
   "authors": [
     "Victor Queiroz <victorcqueirozg@gmail.com>"
   ],
-  "description": "Linux 'bash' faker",
+  "description": "Linux shell simulator",
   "moduleType": [
     "node"
   ],
