@@ -1,0 +1,19 @@
+{
+  "name": "bashjs",
+  "version": "0.0.1",
+  "authors": [
+    "Victor Queiroz <victorcqueirozg@gmail.com>"
+  ],
+  "description": "Linux 'bash' faker",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

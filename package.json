@@ -1,0 +1,27 @@
+{
+  "name": "bashjs",
+  "version": "0.0.1",
+  "description": "Linux 'bash' faker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.1",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-htmlmin": "^0.2.0",
+    "gulp-jsdoc": "^0.1.4",
+    "gulp-jshint": "^1.8.4",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.3",
+    "gulp-sourcemaps": "^1.2.2",
+    "gulp-uglify": "^1.0.1",
+    "karma": "^0.12.23",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}
