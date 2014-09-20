@@ -1,4 +1,4 @@
 bash.js
 =======
 
-Linux shell faker
+Linux shell simulator
