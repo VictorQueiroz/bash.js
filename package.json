@@ -1,7 +1,7 @@
 {
   "name": "bashjs",
   "version": "0.0.1",
-  "description": "Linux 'bash' faker",
+  "description": "Linux shell simulator",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
