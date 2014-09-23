@@ -12,7 +12,6 @@ var cssmin = require('gulp-cssmin');
 var htmlmin = require('gulp-htmlmin');
 var jsdoc = require('gulp-jsdoc');
 var nodemon = require('gulp-nodemon');
-var rjs = require('gulp-requirejs');
 
 var paths = {};
 paths.stylesheets = ['src/scss/**/*.scss'];
@@ -29,16 +28,12 @@ gulp.task('docs', function () {
 gulp.task('scripts', ['docs'], function () {
 	var dest = path.join(__dirname, 'dist');
 
-	rjs({
-			name: 'bash',
-			baseUrl: 'src/js/application',
-			out: 'dist/bash.min.js',
-			mainConfigFile: 'src/js/main.js',
-			removeCombined: true,
-			normalizeDirDefines: 'skip',
-			useStrict: true,
-			skipModuleInsertion: false,
-		})
+	gulp.src(paths.scripts)
+		.pipe(jshint())
+		.pipe(sourcemaps.init())
+			.pipe(concat('bash.js'))
+			.pipe(uglify())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(dest));
 });
 
