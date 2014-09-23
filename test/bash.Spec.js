@@ -6,6 +6,6 @@ describe('bash', function () {
 	});
 
 	it('should detect changes on command attribute', function () {
-
+		bash.command = 'ls'
 	});
 });
